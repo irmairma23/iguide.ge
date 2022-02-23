@@ -5,7 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".default_option").click(function(){
+			  $(".dropdown ul").toggleClass("active");
+			});
+
+			$(".dropdown ul li").click(function(){
+			  var text = $(this).text();
+			  $(".default_option").text(text);
+			  $(".dropdown ul").removeClass("active");
+			});
+		});
+	</script>
+
+
+    <title>iguide.ge</title>
     <script src="https://kit.fontawesome.com/26d4a64054.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -13,6 +29,7 @@
         <div class="First_line">
             <div class="container">
                 <div class="left">
+                    <img src="images/cell.png" alt="">
                    <span>(+995) 598 19 99 89</span>
                 </div>
                 <div class="Right">
@@ -47,6 +64,47 @@
             </div>
         </div>
     </header>
-    
+    <div class="title">
+        <h1 class="text">iGuide.Ge - Tbilisi Guide</h1>
+        <div class="tbilisi">
+            <img src="images/location-sign.svg" alt=""><span class="tbilisi1">Tbilisi</span>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="search_box">
+            <div class="dropdown">
+                <div class="default_option">All</div>
+                <ul>
+                    <li>All</li>
+                    <li>Restaurants</li>
+                    <li>Partner Hotels</li>
+                    <li>Casinos & Gambling</li>
+                    <li>Banks & Finances</li>
+                    <li>Communication</li>
+                    <li>Insurance</li>
+                    <li>Shopping</li>
+                    <li>Georgian Wines</li>
+                    <li>Night Life</li>
+                    <li>Transportation</li>
+                    <li>Tourism & Travel</li>
+                    <li>Regional Resorts</li>
+                    <li>Historical Places</li>
+                    <li>Developers</li>
+                    <li>Gym & Pool</li>
+                    <li>Spa & Beauty</li>
+                    <li>Delivery Service</li>
+                    <li>Entertaiments</li>
+                    <li>Legal Services</li>
+                    <li>Medical</li>
+                </ul>
+            </div>
+            <div class="search_field">
+                <input type="text" class="input" placeholder="Search">
+                <img class="search-icon" src="images/Search_Icon.svg" alt="search"> 
+                
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

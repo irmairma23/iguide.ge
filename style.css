@@ -8,14 +8,16 @@
 }
 
 body {
-    background-color: black;
     width: 100%;
     height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: url(images/homepage-back.jpg);
-    background-size: cover;
+    background: url(images/homepage-back.jpg) ; 
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    background-color: rgb(255, 255, 255);
     width:100%;
-    opacity: 96%;
+    opacity: 90%;
+    
     
     
 }
@@ -37,7 +39,7 @@ header .First_line .container{
     padding-top: 10px;
 }
 
-header .First_line .container .left span{
+header .First_line .container .left {
     margin-left: 2rem;
     color: #fff;
     font-size: 1rem;
@@ -95,10 +97,137 @@ nav ul li a {
 
 }
 
+
 span {
     color: white;
 }
 
+.title {
+    color: white;
+    margin: 100px 330px;
+}
 
+.title .text {
+    font-size: 2em;
+}
 
+.tbilisi {
+    background: rgba(233, 29, 98, 0.7);
+    padding: 7px 10px;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    
+}
+
+.tbilisi img {
+    width: 20px;
+    color: white;
+}
+
+.wrapper {
+    position:absolute;
+    margin: 100px 330px;
+    
+    
+    
+}
+
+.wrapper .search_box {
+    width: 600px;
+    background: #fff;
+    height: 45px;
+    border-radius: 3px;
+    display: flex;
+    
+    
+    
+    
+    
+
+}
+.search-icon {
+    width: 30px;
+
+}
+
+.wrapper .search_box .dropdown {
+    width:40px ;  
+    border-right: 50px solid rgb(233, 29, 97);
+    background-color: rgb(233, 29, 97);
+    color: rgb(82, 66, 66);
+    cursor: pointer;
+    
+}
+
+.wrapper .search_box .dropdown .default_option {
+    padding: 5px 10px;
+    font-size: 16px;
+    user-select: none;
+
+}
+.wrapper .search_box .dropdown ul {
+    top: 70px;
+    left: -10px;
+    background: #fff;
+    width: 170px;
+    padding-left: 10px;
+    box-shadow: 8px 8px 6px -10px #b3c6ff;
+    display: none;
+}
+
+.wrapper .search_box .dropdown ul li {
+    padding-bottom: 20px;
+    user-select: none;
+    
+}
+.wrapper .search_box .dropdown ul.active{
+    display: block;
+  }
+
+.wrapper .search_box .dropdown ul li:last-child {
+    padding-bottom: 0;
+}
+
+.wrapper .search_box .dropdown ul li:hover {
+    background-color: #fcebeb;
+}
+
+.wrapper .search_box .search_field {
+    width: 550px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    height: 100%;
+    position: relative;
+    
+}
+
+.wrapper .search_box .search_field .input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 90px;
+    color: #b3c6ff;
+}
+
+.wrapper .search_box .search_field img {
+    position: absolute;
+    right: 10px;
+    top:5px;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: #cecece;  
+}
+
+::-moz-input-placeholder {
+    color: #cecece;  
+}
+
+::-ms-input-placeholder {
+    color: #cecece;  
+}
 
