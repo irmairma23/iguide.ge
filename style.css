@@ -148,6 +148,8 @@ span {
 }
 .search-icon {
     width: 30px;
+    height: 100%;
+    border-left: 1px solid gray;
 
 }
 
@@ -215,7 +217,7 @@ span {
 .wrapper .search_box .search_field img {
     position: absolute;
     right: 10px;
-    top:5px;
+    
     cursor: pointer;
 }
 
